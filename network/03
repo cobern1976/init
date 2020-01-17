@@ -1,0 +1,5 @@
+#!/bin/sh
+ifconfig -L en1 | grep "ether" | cut -d " " -f 2
+
+# Identify the MAC address of the Wi-Fi card.
+# Same but en1 is your Wi_Fi while en0 is Ethernet. en0 is the first device to start, en1 the second, etc. lo0 is the 'loopback' interface.

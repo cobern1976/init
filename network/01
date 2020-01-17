@@ -1,0 +1,5 @@
+#!/bin/sh
+ifconfig -l
+
+# Get the list of the network interfaces of the machine
+# Names only

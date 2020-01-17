@@ -1,0 +1,9 @@
+#!/bin/sh
+(a) ifconfig -L en0 | grep "inet " | cut -d " " -f 6
+(b) ifconfig -L en0 | grep "inet " | cut -d " " -f 2
+
+# Identify the Ethernet interface characteristics
+# 1. display the ethernet interface, located at label 'en0'
+# 2. take the row with 'inet'
+# 3. Extract the second word (IP address) or 6
+

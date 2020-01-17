@@ -1,0 +1,7 @@
+#!/bin/sh
+dig slash16.org | grep SERVER | awk '{print $3}' | awk -F '[()]' '{print $2}'
+
+# Same as nslookup but dig provides a more detailed return of DNS lookup.
+# Cut to the server part
+# awk -F '[()]' '{print $2}' will print values between brackets '()'
+# print $2 and $3 say show me the 2nd and 3rd field respectively

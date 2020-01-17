@@ -1,0 +1,3 @@
+service ssh status
+
+# Name the command that determines the state of the SSH service.

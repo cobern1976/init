@@ -1,0 +1,4 @@
+traceroute slash16.org
+
+# The purpose of this utility is to show you the path your traffic takes when you are
+# attempting to connect to another machine.

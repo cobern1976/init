@@ -1,0 +1,5 @@
+systemctl list-units --type service --all
+
+# List all services which are started at boot time. Name those services.
+# There  are accounts service, console-screen.service, authorization manager and more
+# (see description)

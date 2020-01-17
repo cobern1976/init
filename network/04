@@ -1,0 +1,5 @@
+#!/bin/sh
+route -n get default | grep 'gateway' | awk '{print $2}'
+
+# We can also use "netstat -nr | grep default | head -1 | awk '{print $2}'". Same
+# The awk command tells to match and print the second column of the result in the text
